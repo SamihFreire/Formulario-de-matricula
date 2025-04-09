@@ -1,0 +1,29 @@
+button {
+    all: unset; /* Remove todas as configurações do botão, deixando puro */
+    font-weight: 500;
+    color: var(--text-highlight);
+    padding: .75rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer; /* Define o curso como a maozinha ao passar o mouse */
+
+    &.btn-primary {
+        color: white;
+        background-color: #E43A12;
+
+        &:hover, 
+        &:focus {
+            background-color: #F3541C;
+        }
+    }
+
+    &.btn-secondary {
+        margin-left: auto;
+        border: 1px solid var(--text-highlight);
+
+        &:hover, 
+        &:focus {
+            color: #E43A12;
+            outline: .25rem solid var(--surface-secondary);
+        }
+    }
+}
