@@ -50,3 +50,13 @@ img {
 .flex-2 {
     flex: 2;
 }
+
+.desktop-only {
+    display: inherit;
+}
+
+@media (width <= 49em) {
+    .desktop-only {
+        display: none;
+    }
+}

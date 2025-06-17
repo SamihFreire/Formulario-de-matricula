@@ -49,3 +49,42 @@ aside {
         }
     }
 }
+
+@media (width <= 49em) {
+
+    #app {
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    main {
+        padding: 1.5rem;
+        overflow: visible;
+
+        & .main-container {
+            max-width: 33rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    aside {
+        padding: 1.5rem;
+        order: -1;
+
+        & .aside-containe {
+            margin-left: auto;
+            margin-right: auto;
+            
+            & > img {
+                margin-top: 0.75rem;
+            }
+            
+            & header {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
